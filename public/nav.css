@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: normal;
+}
+
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #00435c;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #00bbff;
+
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 100%;
+  /* Ajusta el tamaño del logo */
+  max-width: 100%;
+  /* Limita el ancho máximo del logo */
+  margin-right: 20px;
+  /* Margen derecho para separar del borde */
+}
+
+.nav ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.nav ul li {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #010101;
+  display: inline-flex;
+  border-radius: 35px;
+  padding: 10px;
+  background-color: #00435c;
+}
+.nav ul li:hover{
+  background: #016184;
+  box-shadow: neno;
+}
+
+.nav ul a {
+  text-decoration: none;
+  
+}
+a{
+  color: #010101;
+}
+
+
+/*main*/
+.main {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.info-content{
+  margin: 30px;
+}
+h1 {
+  font-size: 3em;
+  color: rgb(0, 0, 0);
+}
+.main p,
+.about p{
+  color: #fff;
+}
+/* estilos del boton*/
+.cv {
+  padding: 10px 20px;
+  background-color: rgb(185, 130, 130);
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgb(102, 231, 200, .69);
+}
+
+.cv:hover {
+  background-color: #700707;
+  box-shadow: neno;
+}
+
+/******/
+/*Estilos de la iamgen*/
+.main img {
+  width: 40vh;
+  border-radius: 10vh;
+  border: solid 5px;
+  margin: 25px;
+  border: 10px outset #17010e;
+  position: relative;
+  left: 180px;
+  z-index: 1;
+}
+.main h2{
+  color: #000000;
+}
+
+/*************/
+
+/*Medias query para pantallas pequeñas*/
+@media only screen and (max-width: 1078px) {
+  .main {
+    grid-template-columns: 1fr;
+    /* Una sola columna que ocupa todo el ancho */
+    text-align: center;
+    /* Centrar el texto */
+  }
+
+
+  .main img {
+    margin: 0 auto;
+    position: static;
+    width: 100%;
+    height: 100vw;
+    /* Restablecer la posición para que se ajuste naturalmente */
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 20px;
+    /* Añadido para dar espacio al header */
+  }
+
+  .logo img {
+    width: 100%;
+    /* Ajusta el tamaño del logo */
+    max-width: 100%;
+    /* Limita el ancho máximo del logo */
+    margin-right: 20px;
+    /* Margen derecho para separar del borde */
+  }
+
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .nav ul li {
+    text-decoration: none;
+    margin: 10px;
+    /* Ajusta el margen de los items de navegación */
+    font-size: 10px;
+    font-weight: bold;
+    color: #010101;
+    display: inline-flex;
+    border-radius: 35px;
+    padding: 9px;
+   
+  }
+  .main a{
+    font-size: 15px;
+  }
+}
+
+/********************************/
+/* ESTILOS PARA EL ABOUT ME SOBRE MI*/
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  align-items: center;
+}
+
+.about img{
+  width: 40vh;
+  border-radius: 10vh;
+  border: solid 5px;
+  margin: 25px;
+  border: 10px outset #17010e;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 1em;
+  color: #000000;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: rgb(5, 130, 130);
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 2em;
+}
+/* media query del about */
+@media only screen and (max-width: 1078px) {
+  .about,
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-info {
+    margin-top: 20px;
+    order: 1;
+    width: 80%;
+    padding: 1em; /* Ajusta el padding para mejorar la apariencia en dispositivos pequeños */
+  }
+  .main img,
+  .about img{
+    order: 2;
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .about-info h2 {
+    margin-bottom: 1em; /* Añade margen inferior para separar el título del texto */
+  }
+
+  .divider {
+    margin: 0 auto 2em auto; /* Centra el divisor y añade margen inferior */
+  }
+
+}
+/*********************************/
+
+/* My portfolio */
+.portfolio{
+  width: 100%;
+}
+.portfolio-headings {
+  width: 100%;
+  padding: 5em;
+}
+
+.portfolio-headings h2 {
+  font-size: 2.5em;
+}
+
+.portfolio .container {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  color: aliceblue;
+  background-color: #101e4b;
+}
+
+.card__img {
+  width: 100%;
+  height: 250px;
+  background-image: url(/img/Screenshot_20240715-020157\ \(1\).png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__project-link {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__project-link a {
+
+  text-decoration: none;
+}
+
+.card__project-link i {
+  font-size: 1.5em;
+}
+
+.card .project-details {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  width: 50%;
+}
+.card .project-details a{
+  text-decoration: none;
+}
+/**********************************/
+
+/* Formulario de Contacto*/
+.container-contacto{
+  justify-content: center;
+  padding: 3em;
+  margin: 0 auto;
+}
+.encabezado-contacto h2{
+font-size: 3em;
+}
+
+.form{
+  
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+  
+}
+/*Estilos input*/
+.form input{
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border: 1px solid #fff;
+}
+
+/*estilo textarea*/
+.form textarea{
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+}
+.btn-submint{
+  padding: 10px 20px;
+  margin: 1em;
+  border: none;
+  text-transform: uppercase;
+  background-color: #c07777;
+}

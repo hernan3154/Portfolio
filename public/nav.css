@@ -3,23 +3,33 @@
   padding: 0;
   box-sizing: border-box;
   overflow-wrap: normal;
+  font-family: monospace;
+  /*font-family: 'Monotype Corsiva', cursive;*/
 }
 
+
 body {
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #00435c;
+  background-image: -webkit-linear-gradient(7deg, #0093E9 0%, #80D0C7 100%);
+  background-image: -moz-linear-gradient(7deg, #0093E9 0%, #80D0C7 100%);
+  background-image: -o-linear-gradient(7deg, #0093E9 0%, #80D0C7 100%);
+  background-image: linear-gradient(7deg, #0093E9 0%, #80D0C7 100%);
+  box-shadow: 9px -6px 190px 23px rgba(25,121,128,0.92);
+-webkit-box-shadow: 9px -6px 190px 23px rgba(25,121,128,0.92);
+-moz-box-shadow: 9px -6px 190px 23px rgba(25,121,128,0.92);
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #00bbff;
-
   padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 2, 0.2);
+  
 }
 
 .logo img {
+  justify-content: center;
+  align-items: center;
   width: 100%;
   /* Ajusta el tamaño del logo */
   max-width: 100%;
@@ -33,23 +43,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
-
 .nav ul li {
   text-decoration: none;
-  margin: 10px;
-  font-size: 20px;
   font-weight: bold;
-  color: #010101;
   display: inline-flex;
-  border-radius: 35px;
-  padding: 10px;
-  background-color: #00435c;
-}
-.nav ul li:hover{
-  background: #016184;
-  box-shadow: neno;
+  
+ 
 }
 
 .nav ul a {
@@ -63,54 +62,85 @@ a{
 
 /*main*/
 .main {
+  box-shadow: 0 0 10px rgba(0, 0, 2, 0.2);
   margin: 0 auto;
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+
 }
 .info-content{
   margin: 30px;
 }
-h1 {
+.encabezado-contacto h1 {
   font-size: 3em;
   color: rgb(0, 0, 0);
+  margin-left: 5vw;
+  margin: 5%;
+}
+.contacto h2,
+.contacto i{
+  margin-left: 5%;
 }
 .main p,
 .about p{
-  color: #fff;
-}
-/* estilos del boton*/
-.cv {
-  padding: 10px 20px;
-  background-color: rgb(185, 130, 130);
-  border: none;
-  border-radius: 20px;
-  margin-top: 10px;
-  cursor: pointer;
-  box-shadow: 1px 3px 11px -5px rgb(102, 231, 200, .69);
+  color: rgb(0, 0, 0);
+  font-weight: 650;
+  font-size: 18px;
 }
 
-.cv:hover {
-  background-color: #700707;
-  box-shadow: neno;
+/* estilos del boton*/
+.cv a {
+  color: #ffffff;
+  
 }
+.cv {
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  padding: 15px 25px;
+  background-color: #17010e;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 12px;
+  border: solid black;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  /*********/
+  border-radius: 10vh;
+  border: solid 5px;
+  margin: 25px;
+  border: 8px outset #17010e;
+}
+.cv:hover {
+  filter: brightness(1.05);
+}
+
+.cv:active {
+  transform: scale(.95);
+}
+
 
 /******/
 /*Estilos de la iamgen*/
 .main img {
-  width: 40vh;
+  width: 50vh;
   border-radius: 10vh;
-  border: solid 5px;
   margin: 25px;
   border: 10px outset #17010e;
   position: relative;
-  left: 180px;
+  left: 15%;
   z-index: 1;
+  display: flex;
 }
 .main h2{
   color: #000000;
+  font-weight: 500;
 }
 
 /*************/
@@ -123,13 +153,16 @@ h1 {
     text-align: center;
     /* Centrar el texto */
   }
-
+  
+  .contacto i{
+    margin-left: 0%;
+  }
 
   .main img {
     margin: 0 auto;
     position: static;
-    width: 100%;
-    height: 100vw;
+    width: 90%;
+    height: auto;
     /* Restablecer la posición para que se ajuste naturalmente */
   }
 
@@ -151,37 +184,49 @@ h1 {
     /* Margen derecho para separar del borde */
   }
 
-  .nav ul {
+  .nav ul{
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    justify-content: center;
     
   }
 
   .nav ul li {
     text-decoration: none;
-    margin: 10px;
+    margin: 0px;
     /* Ajusta el margen de los items de navegación */
-    font-size: 10px;
     font-weight: bold;
     color: #010101;
     display: inline-flex;
     border-radius: 35px;
     padding: 9px;
-   
   }
+
+
   .main a{
     font-size: 15px;
   }
+  .cv{
+    font-size: 20px;
+    margin: 0px;
+    padding: 5px;
+  }
+
 }
 
 /********************************/
 /* ESTILOS PARA EL ABOUT ME SOBRE MI*/
 .about {
+  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 2, 0.2);
+  
 }
 
 .about img{
@@ -194,20 +239,12 @@ h1 {
 
 .about-info {
   grid-column: 5/10;
-  padding: 3em;
+  padding: 12em;
 }
 
 .about-info h2 {
-  font-size: 1em;
+  
   color: #000000;
-}
-
-.divider {
-  height: 4px;
-  width: 60px;
-  background-color: rgb(5, 130, 130);
-  margin-top: 5px;
-  margin-bottom: 2em;
 }
 
 .about p {
@@ -222,7 +259,13 @@ h1 {
     align-items: center;
     text-align: center;
   }
-
+  .portfolio .container{
+    padding: 10px;
+  }
+  .portfolio-headings h1 {
+    text-align: center;
+    
+  }
   .about-info {
     margin-top: 20px;
     order: 1;
@@ -240,24 +283,86 @@ h1 {
     margin-bottom: 1em; /* Añade margen inferior para separar el título del texto */
   }
 
-  .divider {
-    margin: 0 auto 2em auto; /* Centra el divisor y añade margen inferior */
+
+  .encabezado-contacto
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .encabezado-contacto h1{
+    justify-content: center;
+    
+  }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto p{
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contacto h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    text-align: center;
   }
 
+  .habi {
+    flex-direction: column;
+    align-items: center;
 }
+
+.habilidades {
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las tarjetas en vista móvil */
+}
+
+.habilidades .tarjeta {
+    width: 90%;
+}
+
+}
+
 /*********************************/
 
 /* My portfolio */
+/*.proyecto{
+  box-shadow: 0 0 10px rgba(0, 0, 2, 0.2);
+  background-image: -webkit-linear-gradient(7deg, #0093E9 0%, #80D0C7 100%);
+  background-image: -moz-linear-gradient(7deg, #0093E9 0%, #80D0C7 100%);
+  background-image: -o-linear-gradient(7deg, #0093E9 0%, #80D0C7 100%);
+  background-image: linear-gradient(7deg, #0093E9 0%, #80D0C7 100%);
+  box-shadow: 9px -6px 190px 23px rgba(25,121,128,0.92);
+-webkit-box-shadow: 9px -6px 190px 23px rgba(25,121,128,0.92);
+-moz-box-shadow: 9px -6px 190px 23px rgba(25,121,128,0.92);
+
+}*/
+.proyecto h1{
+  padding-right: 54px;
+  margin-left: 8vw;
+  top: 25px;
+  margin-top: 4vw;
+}
 .portfolio{
   width: 100%;
 }
 .portfolio-headings {
+  flex-direction: column;
   width: 100%;
-  padding: 5em;
+  padding: 2rem;
 }
 
-.portfolio-headings h2 {
-  font-size: 2.5em;
+.portfolio-headings  {
+  display: flex;
+  font-size: 10rem;
 }
 
 .portfolio .container {
@@ -266,29 +371,32 @@ h1 {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .card {
   width: 300px;
-  height: 350px;
+  height: auto;
   color: aliceblue;
-  background-color: #101e4b;
+  background-color: #910808;
 }
 
 .card__img {
   width: 100%;
   height: 250px;
-  background-image: url(/img/Screenshot_20240715-020157\ \(1\).png);
+  background-image: url(img/Screenshot_20240715-020157\ \(1\).png);
   background-size: cover;
 }
 
 .card__title {
   padding: 20px;
+  text-align: center;
 }
 
 .card__project-link {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 5%;
 }
 
 .card__project-link a {
@@ -316,10 +424,26 @@ h1 {
   justify-content: center;
   padding: 3em;
   margin: 0 auto;
+  
+}
+.contacto-form h2{
+  display: flex;
+  justify-content: center;
 }
 .encabezado-contacto h2{
-font-size: 3em;
+  justify-content: center;
+  font-size: 3em;
+  margin: 0%;
 }
+/*.section-contacto{
+  background-image: -webkit-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+background-image: -moz-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+background-image: -o-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+box-shadow: 9px -6px 190px 23px rgba(0,0,0,0.92);
+-webkit-box-shadow: 9px -6px 190px 23px rgba(0,0,0,0.92);
+-moz-box-shadow: 9px -6px 190px 23px rgba(0,0,0,0.92);
+}*/
 
 .form{
   
@@ -327,15 +451,18 @@ font-size: 3em;
   flex-direction: column;
   width: 30vw;
   margin-top: 2em;
-  
 }
+
 /*Estilos input*/
 .form input{
   padding: 10px 20px;
   margin-bottom: 1em;
   background: none;
   border: none;
-  border: 1px solid #fff;
+  border-radius: 10vh;
+  border: solid 5px;
+  margin: 25px;
+  border: 3px outset #17010e;
 }
 
 /*estilo textarea*/
@@ -343,12 +470,183 @@ font-size: 3em;
   height: 150px;
   padding: 1.5em;
   background: none;
-  border: 1px solid #fff;
+  
+  border: solid 5px;
+  margin: 25px;
+  border: 3px outset #17010e;
 }
-.btn-submint{
-  padding: 10px 20px;
-  margin: 1em;
-  border: none;
-  text-transform: uppercase;
-  background-color: #c07777;
+.contacto-form h2
+.contacto h2{
+  font-weight: 600;
+  letter-spacing: 0.3em;
 }
+.datos{
+display: flex;
+flex-direction: column;
+margin-top: 10rem;
+font-size: 20px;
+gap: 25px;
+}
+
+
+/******habilidades****/
+.habi {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 5% auto;
+  gap: 5%;
+}
+
+
+.habilidades {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.habilidades h4 {
+  margin: 10px 0;
+}
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+
+  border-radius: 12vh;
+  border: solid 2px;               
+  border: 2px outset #17010e;
+}
+
+.porcen {
+  position: absolute;
+  height: 100%; 
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 12vh;
+  justify-content: center;
+align-items: center;
+}
+
+.CSS {
+  background-color: #2196F3;
+  animation: css 2s forwards;
+  width: 80%;
+}
+
+.JS {
+  background-color: #f0db4f;
+  animation: js 2s forwards;
+  width: 50%;
+}
+
+.PN {
+  animation: pty 2s forwards;
+  background: #ffde57;
+  background: linear-gradient(66deg,#ffde57 0%, #4584b6 80%);
+  background: -webkit-linear-gradient(66deg,#ffde57 0%, #4584b6 80%);
+  background: -moz-linear-gradient(66deg,#ffde57 0%, #4584b6 80%);
+  width: 50%;
+}
+
+.DJ {
+  background-color: #092e20;
+  animation: dj 2s forwards;
+  width: 70%;
+}
+
+.NJS {
+  background-color: #44883e;
+  animation: njs 2s forwards;
+  width: 80%;
+}
+
+.HTML{
+  background-color: #e34c26;
+  animation: html 2s forwards;
+  border-radius: 4rem;
+}
+@keyframes css{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes dj{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes js{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 50%;
+  }
+}
+@keyframes pty{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 50%;
+  }
+} 
+@keyframes html{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes njs{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+}
+/******habilidades****/
+
+/*Footer*/
+
+.nav-link  {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #000000;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  font-weight: 700;
+}
+:root {
+  --bs-nav-link-font-size: 2rem; /* Puedes ajustar este valor según tus necesidades */
+}
+.container-foo{
+  box-shadow: 0 0 10px rgba(0, 0, 2, 0.2);
+}
+.text-center{
+  font-weight: 700;
+  color: #000000;
+  font-size: 1.5rem;
+}
+/*Footer*/

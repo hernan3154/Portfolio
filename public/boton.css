@@ -1,0 +1,102 @@
+/*<button class="button-37" role="button"><span class="text">Button 37</span></button>*/
+
+/* CSS */
+.button-37 {
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    padding: 15px 25px;
+    background-color: #17010e;
+    /*background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);*/
+
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10vh;
+    border: solid 5px;
+    margin: 25px;
+    border: 8px outset #17010e;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.button-37:hover {
+    filter: brightness(1.05);
+}
+
+.button-37:active {
+    transform: scale(.95);
+}
+
+
+/* botones del nav */
+/* CSS */
+.button-63 {
+    letter-spacing: 0.2em;
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #0288db);
+    border: solid black;
+    border-radius: 15px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: 900;
+    display: flex;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 110px;
+    padding: 12px 10px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    /*********/
+    border-radius: 10vh;
+    border: solid 5px;
+    margin: 25px;
+    border: 8px outset #17010e;
+
+}
+
+.button-63:active,
+.button-63:hover {
+    outline: 0;
+}
+
+@media (max-width: 1078px) {
+    .button-63,
+    .button-37 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        min-width: 10vh;
+        display: inline;
+        padding: 10px 14px;
+        margin: 0px;
+    }
+    .form{
+        width: 50vw;
+        margin-top: -1rem;
+    }
+    .header.nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .datos{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        gap: 2px;
+        margin-top: 3rem;
+        }
+}

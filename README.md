@@ -25,13 +25,13 @@ Enlaces a Hojas de Estilo: nav.css y boton.css son hojas de estilo personalizada
 
 *  Header: Incluye el logotipo y la barra de navegación con enlaces a secciones del portfolio (Proyectos, Sobre Mi, Mi CV, Contacto).
 
-* Main: Sección principal con una breve introducción sobre ti y enlaces a las secciones Sobre Mi, Mi CV, y Proyectos.
+* Main: Sección principal con una breve introducción  y enlaces a las secciones Sobre Mi, Mi CV, y Proyectos.
 
-* Sección Sobre Mi (<div class="about" id="sobreMi">): Contiene una imagen y un texto que describe tu experiencia y habilidades.
+* Sección Sobre Mi (<div class="about" id="sobreMi">): Contiene una imagen y un texto que describe mis experiencia y habilidades.
 
 * Sección Proyectos (<section class="proyecto" id="proyectos">): Muestra una lista de proyectos con enlaces a GitHub, al sitio web del proyecto y detalles del proyecto.
 
-* Sección Habilidades (<section class="habi">): Lista tus habilidades con barras de progreso que indican tu nivel de competencia en cada una.
+* Sección Habilidades (<section class="habi">): Lista de habilidades con barras de progreso que indican tu nivel de competencia en cada una.
 
 * Sección Contacto (<section class="section-contacto" id="contacto">): Proporciona información de contacto y un formulario para enviar mensajes.
 

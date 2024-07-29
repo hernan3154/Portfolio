@@ -1,39 +1,39 @@
 # Portfolio
 # install
-nodemailer
-body-parser
-express
-npm install dotenv
-nodemon
+```nodemailer```
+```body-parser```
+```express```
+```npm install dotenv```
+```nodemon```
 
 
 # Descripción del Código
 Este proyecto es un portfolio personal creado con HTML, CSS y JavaScript. Utiliza Bootstrap para el diseño responsivo y SweetAlert2 para las alertas. A continuación se describe la estructura y el contenido del código:
 
 ## 1. Estructura del Código
-Encabezado del Documento (<head>)
+Encabezado del Documento 
 
 * Enlaces a Bootstrap CSS y SweetAlert2 CSS: Estos enlaces importan estilos de Bootstrap y SweetAlert2 desde una CDN para facilitar el diseño y las alertas.
 
 * Metaetiquetas: Configuran la codificación de caracteres y la vista en dispositivos móviles.
 
-Enlaces a Hojas de Estilo: nav.css y boton.css son hojas de estilo personalizadas para el menú de navegación y los botones.
+* Enlaces a Hojas de Estilo: nav.css y boton.css son hojas de estilo personalizadas para el menú de navegación y los botones.
 
 * Título del Documento: "Mi Portfolio".
 
-## 2. Cuerpo del Documento (<body>)
+## 2. Cuerpo del Documento 
 
 *  Header: Incluye el logotipo y la barra de navegación con enlaces a secciones del portfolio (Proyectos, Sobre Mi, Mi CV, Contacto).
 
 * Main: Sección principal con una breve introducción  y enlaces a las secciones Sobre Mi, Mi CV, y Proyectos.
 
-* Sección Sobre Mi (<div class="about" id="sobreMi">): Contiene una imagen y un texto que describe mis experiencia y habilidades.
+* Sección Sobre Mi : Contiene una imagen y un texto que describe mis experiencia y habilidades.
 
-* Sección Proyectos (<section class="proyecto" id="proyectos">): Muestra una lista de proyectos con enlaces a GitHub, al sitio web del proyecto y detalles del proyecto.
+* Sección Proyectos : Muestra una lista de proyectos con enlaces a GitHub, al sitio web del proyecto y detalles del proyecto.
 
-* Sección Habilidades (<section class="habi">): Lista de habilidades con barras de progreso que indican tu nivel de competencia en cada una.
+* Sección Habilidades : Lista de habilidades con barras de progreso que indican mi nivel de aprendizaje.
 
-* Sección Contacto (<section class="section-contacto" id="contacto">): Proporciona información de contacto y un formulario para enviar mensajes.
+* Sección Contacto : Proporciona información de contacto y un formulario para enviar mensajes.
 
 * Footer: Incluye enlaces de navegación y derechos de autor.
 
@@ -54,12 +54,12 @@ Enlaces a Hojas de Estilo: nav.css y boton.css son hojas de estilo personalizada
 
 ### Main
 
-  * Introducción con encabezados y párrafos que presentan tus habilidades y proyectos destacados.
+  * Introducción con encabezados y párrafos que presentan mis habilidades y proyectos destacados.
   * Botones para navegar a las secciones Sobre Mi, Mi CV y Proyectos.
 ### Sobre Mi
 
   * Imagen personal.
-  * Texto detallado sobre tu experiencia y habilidades en desarrollo web.
+  * Texto detallado sobre mis experiencia y habilidades en desarrollo web.
 
 ### Proyectos
 

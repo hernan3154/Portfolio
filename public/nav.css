@@ -268,7 +268,7 @@ a{
   }
   .about-info {
     margin-top: 20px;
-    order: 1;
+    border: 1;
     width: 80%;
     padding: 1em; /* Ajusta el padding para mejorar la apariencia en dispositivos pequeños */
   }
@@ -574,6 +574,20 @@ align-items: center;
   animation: html 2s forwards;
   border-radius: 4rem;
 }
+.SQL {
+  background-color: #f0db4f;
+  animation: sql 2s forwards;
+  width: 50%;
+}
+@keyframes sql{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 50%;
+  }
+}
+
 @keyframes css{
   0%{
     width: 0;

@@ -96,10 +96,32 @@
                         <div class="card__img">
                         </div>
                         <div class="card__title">
-                            <h3>Proyect Descripcion</h3>
+                            <h3>Descripción del Proyecto</h3>
                         </div>
                         <div class="card__project-link">
+                            <a href="https://github.com/hernan3154/proyecto2" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://migenioamor.pythonanywhere.com/" target="_blank">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </a>
                             <a href="">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                        </div>
+                        <button class="cv">
+                            <a href="">Detalles del Proyecto</a>
+                        </button>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="card__img1">
+                        </div>
+                        <div class="card__title">
+                            <h3>Descripción del Proyecto</h3>
+                        </div>
+                        <div class="card__project-link">
+                            <a href="https://github.com/hernan3154/encriptarTexto" target="_blank">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                             <a href="">
@@ -109,12 +131,13 @@
                                 <i class="fa-solid fa-code"></i>
                             </a>
                         </div>
-                        <button class=" cv ">
-                            <a href="">project details</a>
+                        <button class="cv">
+                            <a href="">Detalles del Proyecto</a>
                         </button>
                     </div>
-                </div>
             </div>
+        </div>
+            
         </section>
 
         <section class="habi">
@@ -232,7 +255,7 @@
                         .then(response => response.json())
                         .then(data => {
                             console.log('Success:', data);
-                            //alert de comfirmacion
+                            //alerta de comfirmacion
                             Swal.fire({
                                 icon: 'success',
                                 title: 'Mensaje Enviado',
@@ -241,7 +264,7 @@
                         })
                         .catch((error) => {
                             console.error('Error:', error);
-                            //aleer de error 
+                            //alerta de error 
                             Swal.fire({
                                 icon: 'error',
                                 title: 'Error',
